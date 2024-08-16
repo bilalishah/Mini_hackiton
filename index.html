@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+
+  <title>home</title>
+</head>
+<style>
+.highlighted {
+  background-color: yellow;
+  color: black;
+  padding: 0;
+  margin: 0;
+  display: inline; /* Ensure it's inline with no extra space */
+}
+h2.card-title {
+    gap: 0px ;
+}
+</style>
+<body>
+  <!-- navbar start -->
+  <div class="navbar bg-primary">
+    <div class="flex-1 px-2 lg:flex-none">
+      <a href="./index.html" class="text-lg font-bold text-white">Blog Dashboard</a>
+    </div>
+    <div class="flex flex-1 justify-end px-2">
+      <div id="nav_option_show" class="flex items-stretch">
+        <!-- btn came from js file -->
+      </div>
+    </div>
+  </div>
+  <!-- navbar end -->
+
+  <div class="bg-[#FFF6F6] m-10 p-5">
+
+    
+
+    <h1 class="text-4xl font-bold mt-5 mb-5">
+      Blogs
+    </h1>
+    
+    <!-- product Container start -->
+
+   <div id="main_card_container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+ 
+  </div>
+    <!-- product Container end -->
+
+
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+<script type="module" src="./script/app.js"></script>
+
+</html>

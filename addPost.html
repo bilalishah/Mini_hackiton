@@ -1,0 +1,57 @@
+<!-- Dashboard Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <div class="navbar bg-primary">
+        <div class="flex-1 px-2 lg:flex-none">
+            <a href="./index.html" class="text-lg font-bold text-white">Blog Dashboard</a>
+        </div>
+        <div class="flex flex-1 justify-end px-2">
+            <div id="nav_option_show" class="flex items-stretch">
+                <!-- User info and logout button will be dynamically injected here -->
+            </div>
+        </div>
+    </div>
+    <!-- Navbar end -->
+
+    <!-- Blog Posting Form -->
+    <div class="container mx-auto mt-10">
+        <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4">Post a New Blog</h2>
+            <form id="blogPostForm">
+                <div class="mb-4">
+                    <label for="blogTitle" class="block text-gray-700">Blog Title</label>
+                    <input type="text" id="blogTitle" name="blogTitle" class="input input-bordered w-full" minlength="5" maxlength="50" required />
+                </div>
+                <div class="mb-4">
+                    <label for="blogBody" class="block text-gray-700">Blog Body</label>
+                    <textarea id="blogBody" name="blogBody" class="textarea textarea-bordered w-full" rows="6" minlength="100" maxlength="3000" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Post Blog</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Blog Posts List -->
+    <div id="blogPostsContainer" class="container mx-auto mt-10">
+        <h2 class="text-2xl font-bold mb-4">Your Blogs</h2>
+        <div id="blogPosts" class="space-y-4">
+            <!-- Blog posts will be dynamically injected here -->
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module" src="./script/addPost.js"></script>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+</html>
